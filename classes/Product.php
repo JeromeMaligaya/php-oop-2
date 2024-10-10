@@ -4,14 +4,17 @@ class Product
     public string $nameProduct;
     public float $price;
     public string $image;
+    public Category $category;
 
     public function __construct(
         string $nameProduct,
         float $price,
-        string $image
+        string $image,
+        Category $category,
     ) {
         $this->nameProduct = $nameProduct;
         $this->price = $price;
         $this->image = $image;
+        $this->category = $category;
     }
 }
