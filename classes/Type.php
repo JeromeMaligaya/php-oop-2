@@ -1,5 +1,5 @@
 <?php
-class Type extends Category
+class Type extends product
 {
     public string $nameType;
 
@@ -7,10 +7,10 @@ class Type extends Category
         string $nameProduct,
         float $price,
         string $image,
-        string $nameCategory,
         string $nameType,
+        Category $category,
     ) {
-        parent::__construct($nameProduct, $price, $image, $nameCategory);
+        parent::__construct($nameProduct, $price, $image, $category);
 
         $this->nameType = $nameType;
     }
