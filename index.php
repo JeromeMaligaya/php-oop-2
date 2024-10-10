@@ -88,6 +88,29 @@ $products = [
                     <h1 class="fw-bolder text-center">php-oop-2</h1>
                 </div>
             </div>
+            <div class="row mt-4">
+                <?php foreach ($products as $product) { ?>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 text-center">
+                            <div class="d-flex justify-content-center">
+                                <div class="w-25">
+                                    <img src="<?php echo $product->category->icon; ?>" alt="Icon" class="card-img-top">
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <h5 class="card-title"><?php echo $product->nameProduct; ?></h5>
+                                <p class="card-text">Price: €<?php echo number_format($product->price, 2); ?></p>
+                                <p class="card-text">Type: <?php echo $product->nameType; ?></p>
+                                <div class="mt-auto text-center">
+                                    <p class="card-text">Category: <?php echo $product->category->nameCategory; ?></p>
+                                    <a href="#" class="btn btn-primary btn-sm">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
+
+            </div>
         </div>
     </main>
 
