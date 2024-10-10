@@ -2,7 +2,69 @@
 require_once __DIR__ . '/classes/Product.php';
 require_once __DIR__ . '/classes/Category.php';
 require_once __DIR__ . '/classes/Type.php';
+
+$categoryDog = new Category("dog");
+
+$categoryCat = new Category("cat");
+
+$dogKibble = new Type(
+    "Adult Dog Kibble - Chicken and Rice",
+    29.99,
+    "",
+    "Food",
+    $categoryDog
+);
+
+$fakeBoneToy = new Type(
+    "Fake Bone Toy for Dogs",
+    12.99,
+    "",
+    "Toy",
+    $categoryDog
+);
+
+$softBed = new Type(
+    "Soft Bed for Medium-Sized Dogs",
+    49.99,
+    "",
+    "Bed",
+    $categoryDog
+);
+
+$catKibble = new Type(
+    "Cat Kibble - Salmon and Tuna",
+    25.99,
+    "",
+    "Food",
+    $categoryCat
+);
+
+$catScratchingPost = new Type(
+    "Cat Scratching Post with Cat Hole",
+    39.99,
+    "",
+    "Toy",
+    $categoryCat
+);
+
+$catLitter = new Type(
+    "Sanitizing Cat Litter",
+    9.99,
+    "",
+    "Accessory",
+    $categoryCat
+);
+
+$products = [
+    $dogKibble,
+    $fakeBoneToy,
+    $softBed,
+    $catKibble,
+    $catScratchingPost,
+    $catLitter,
+];
 ?>
+
 <!DOCTYPE html>
 <html lang="it">
 
