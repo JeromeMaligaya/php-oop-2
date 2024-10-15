@@ -15,6 +15,8 @@ $dogKibble = new Type(
     $categoryDog
 );
 
+$dogKibble->getDiscount(30);
+
 $fakeBoneToy = new Type(
     "Fake Bone Toy for Dogs",
     12.99,
@@ -54,6 +56,8 @@ $catLitter = new Type(
     "Accessory",
     $categoryCat
 );
+
+$catLitter->getDiscount(50);
 
 $products = [
     $dogKibble,
