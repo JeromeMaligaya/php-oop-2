@@ -5,7 +5,6 @@ require_once __DIR__ . "../traits/Sellable.php";
 class Product
 {
     public string $nameProduct;
-    public float $price;
     public string $image;
     public Category $category;
 
