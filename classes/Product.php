@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/Category.php";
+require_once __DIR__ . "../traits/Sellable.php";
 
 class Product
 {
@@ -7,6 +8,8 @@ class Product
     public float $price;
     public string $image;
     public Category $category;
+
+    use Sellable;
 
     public function __construct(
         string $nameProduct,
