@@ -1,5 +1,9 @@
 <?php
-class Type extends product
+
+require_once __DIR__ . "/Category.php";
+require_once __DIR__ . "/Product.php";
+
+class Type extends Product
 {
     public string $nameType;
 

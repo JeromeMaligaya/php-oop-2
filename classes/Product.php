@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . "/Category.php";
+
 class Product
 {
     public string $nameProduct;
